@@ -21,16 +21,21 @@ label {
 }
 
 label::after {
-    content: '+';
+
+	font-family: "Font Awesome 6 Free";
+	content: '\f13a'; 
+	font-weight: bold;
     font-size: 22px;
     font-weight: bold;
     position: absolute;
-    right: 10px;
-    top: 2px;
+    right: 1vh;
+    top: 0.5vh;
 }
 
 input:checked + label::after {
-    content: '-';
+    font-family: "Font Awesome 6 Free";
+	content: '\f139'; 
+	font-weight: bold;
 }
 
 label:hover {
