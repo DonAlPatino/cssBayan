@@ -1,9 +1,11 @@
 body{
     color:white;
     border: 1px solid #ababab;
-    padding: 30px 14px 30px 14px;
+    padding: 1%;
 	width: 30%;
 	margin: 0 auto;
+    justify-content: center;
+    align-items: center;
     
 }
 input {
@@ -11,9 +13,24 @@ input {
 }
 
 label {
-    display: block;    
+    display: block;  
+    padding: 8px 22px;  
     background: grey;
     transition: ease .5s;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+
+input:checked + label::after {
+    content: '-';
 }
 
 label:hover {
@@ -26,8 +43,6 @@ label:hover {
     cursor: grab;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 input + label + .content {
