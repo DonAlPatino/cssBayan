@@ -2,7 +2,7 @@ body{
     color:white;
     border: 1px solid #ababab;
     padding: 30px 14px 30px 14px;
-	width: 20%;
+	width: 30%;
 	margin: 0 auto;
     
 }
@@ -21,9 +21,13 @@ label:hover {
 }
 
 .content {
-    background: blue;
+    background: grey;
     border: 1px solid black;
     cursor: grab;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input + label + .content {
@@ -32,4 +36,9 @@ input + label + .content {
 
 input:checked + label + .content {
     display: block;
+}
+
+.content img{
+    height: 100%;
+    width: 100%;
 }
