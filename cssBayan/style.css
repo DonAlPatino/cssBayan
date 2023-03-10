@@ -1,0 +1,35 @@
+body{
+    color:white;
+    border: 1px solid #ababab;
+    padding: 30px 14px 30px 14px;
+	width: 20%;
+	margin: 0 auto;
+    
+}
+input {
+    display: none;
+}
+
+label {
+    display: block;    
+    background: grey;
+    transition: ease .5s;
+}
+
+label:hover {
+    background: #d7d7d7 ;
+}
+
+.content {
+    background: blue;
+    border: 1px solid black;
+    cursor: grab;
+}
+
+input + label + .content {
+    display: none;
+}
+
+input:checked + label + .content {
+    display: block;
+}
