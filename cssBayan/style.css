@@ -64,6 +64,15 @@ input:checked + label + .content {
     transition: all 2s;
 }
 
+label:hover + .content{
+    height: 100%;
+    opacity: 100%;
+}
+
+.content:hover{
+    height: 100%;
+    opacity: 100%;
+}
 .content img{
     height: 100%;
     width: 100%;
