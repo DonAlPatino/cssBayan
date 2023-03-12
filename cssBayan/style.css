@@ -1,6 +1,6 @@
 body{
     color:white;
-    border: 1px solid #ababab;
+    border: 1em solid #ababab;
     padding: 1%;
 	width: 30%;
 	margin: 0 auto;
@@ -12,12 +12,20 @@ body{
     background: grey;
 }
 
+h1 {
+    font-size: 1.5em;
+    color: Black;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
 input {
     display: none; 
 }
 
 label {
-    display: block;  
+    font-size: 1em;
+    display: flex;  
     padding: 1vh 2vh;  
     background: grey;
     transition: ease .5s;
@@ -25,11 +33,10 @@ label {
 }
 
 label::after {
-
 	font-family: "Font Awesome 6 Free";
 	content: '\f13a'; 
 	font-weight: bold;
-    font-size: 22px;
+    font-size: 1.5em;
     font-weight: bold;
     position: absolute;
     right: 1vh;
@@ -46,7 +53,7 @@ label:hover {
 
 .content {
     background: grey;
-    border: 1px solid black;
+    border: 0.1vh solid black;
     cursor: grab;
     overflow: hidden;
     display: flex;
@@ -64,16 +71,21 @@ input:checked + label + .content {
     transition: all 2s;
 }
 
-label:hover + .content{
-    height: 100%;
-    opacity: 100%;
-}
-
-.content:hover{
-    height: 100%;
-    opacity: 100%;
-}
 .content img{
     height: 100%;
     width: 100%;
+}
+
+@media (hover: hover) {
+
+    label:hover + .content{
+        height: 100%;
+        opacity: 100%;
+    }
+    
+    .content:hover{
+        height: 100%;
+        opacity: 100%;
+    }
+
 }
