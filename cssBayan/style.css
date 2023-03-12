@@ -13,7 +13,6 @@ body{
 }
 
 h1 {
-    font-size: 1.5em;
     color: Black;
     margin-bottom: 1em;
     margin-top: 1em;
@@ -24,23 +23,21 @@ input {
 }
 
 label {
-    font-size: 1em;
     display: flex;  
-    padding: 1vh 2vh;  
+    padding: 0.5em 1em;  
     background: grey;
     transition: ease .5s;
     position: relative;
 }
 
 label::after {
+    padding: 0.5em 1em;  
 	font-family: "Font Awesome 6 Free";
 	content: '\f13a'; 
 	font-weight: bold;
-    font-size: 1.5em;
-    font-weight: bold;
     position: absolute;
-    right: 1vh;
-    top: 0.5vh;
+    right: 0.25em;
+    top: 0;
 }
 
 input:checked + label::after {
@@ -88,4 +85,33 @@ input:checked + label + .content {
         opacity: 100%;
     }
 
+}
+
+@media (min-width: 320px) {
+    body {
+        font-size: .25em;
+    }
+
+    h1, label {
+        font-size: 0.5em;
+    }   
+}
+
+@media (min-width: 820px) {
+    body {
+        font-size: 0.75em;
+    }
+
+    h1, label{
+        font-size: 1.25em;
+    }
+}
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 1em;
+    }
+    h1, label{
+        font-size: 1.5em;
+    }
 }
