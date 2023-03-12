@@ -1,14 +1,15 @@
-body{
-    color:white;
+body {
+    color: white;
     border: 1em solid #ababab;
     padding: 1%;
-	width: 30%;
-	margin: 0 auto;
+    width: 30%;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
-    
+
 }
-.bayan{
+
+.bayan {
     background: grey;
 }
 
@@ -19,33 +20,33 @@ h1 {
 }
 
 input {
-    display: none; 
+    display: none;
 }
 
 label {
-    display: flex;  
-    padding: 0.5em 1em;  
+    display: flex;
+    padding: 0.5em 1em;
     background: grey;
     transition: ease .5s;
     position: relative;
 }
 
 label::after {
-    padding: 0.5em 1em;  
-	font-family: "Font Awesome 6 Free";
-	content: '\f13a'; 
-	font-weight: bold;
+    padding: 0.5em 1em;
+    font-family: "Font Awesome 6 Free";
+    content: '\f13a';
+    font-weight: bold;
     position: absolute;
     right: 0.25em;
     top: 0;
 }
 
-input:checked + label::after {
-    transform:rotate(180deg);
+input:checked+label::after {
+    transform: rotate(180deg);
 }
 
 label:hover {
-    background: #d7d7d7 ;
+    background: #d7d7d7;
 }
 
 .content {
@@ -56,31 +57,31 @@ label:hover {
     display: flex;
 }
 
-input + label + .content {
-    height:0;
+input+label+.content {
+    height: 0;
     opacity: 0;
     transition: all 0.5s ease-in;
 }
 
-input:checked + label + .content {
+input:checked+label+.content {
     height: 100%;
     opacity: 100%;
     transition: all 2s;
 }
 
-.content img{
+.content img {
     height: 100%;
     width: 100%;
 }
 
 @media (hover: hover) {
 
-    label:hover + .content{
+    label:hover+.content {
         height: 100%;
         opacity: 100%;
     }
-    
-    .content:hover{
+
+    .content:hover {
         height: 100%;
         opacity: 100%;
     }
@@ -92,9 +93,10 @@ input:checked + label + .content {
         font-size: .25em;
     }
 
-    h1, label {
+    h1,
+    label {
         font-size: 0.5em;
-    }   
+    }
 }
 
 @media (min-width: 820px) {
@@ -102,7 +104,8 @@ input:checked + label + .content {
         font-size: 0.75em;
     }
 
-    h1, label{
+    h1,
+    label {
         font-size: 1.25em;
     }
 }
@@ -111,7 +114,9 @@ input:checked + label + .content {
     body {
         font-size: 1em;
     }
-    h1, label{
+
+    h1,
+    label {
         font-size: 1.5em;
     }
 }
